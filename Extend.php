@@ -47,10 +47,10 @@ class Person
 class Employee extends Person
 {
 	// 変更箇所（子クラスも変更が必要になる → Personを継承しているクラスだけ変更が必要になってしまう）
-  public function __construct(string $name, int $age, string $grade, string $gender)
+	public function __construct(string $name, int $age, string $grade, string $gender)
 	{
-      parent::__construct($name, $age, $grade, $gender);
-  }
+			parent::__construct($name, $age, $grade, $gender);
+	}
 }
 
 // Client （実行 = php Extend.php）

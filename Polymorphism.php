@@ -3,13 +3,15 @@
 declare(strict_types=1);
 
 /* 従業員インターフェース */
-interface Employee {
+interface Employee
+{
 	function getName():string;
 	function getSalary():int;
 }
 
 /* エンジニアクラス */
-class Engineer implements Employee {
+class Engineer implements Employee
+{
 	private int $salary = 20;
 	private string $name = 'エンジニア';
 
@@ -24,7 +26,8 @@ class Engineer implements Employee {
 }
 
 /* デザイナークラス */
-class Designer implements Employee {
+class Designer implements Employee
+{
 	private int $salary = 25;
 	private string $name = 'デザイナー';
 
@@ -39,7 +42,8 @@ class Designer implements Employee {
 }
 
 /* ディレクタークラス */
-class Director implements Employee {
+class Director implements Employee
+{
 	private int $salary = 30;
 	private string $name = 'ディレクター';
 
